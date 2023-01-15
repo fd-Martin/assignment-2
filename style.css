@@ -567,7 +567,11 @@ header {
     .features-section {
         flex-direction: column;
     }
-
+    .features-images {
+        display: grid;
+        grid-template-columns: repeat(1, 500px);
+        gap: 10px;
+    }
     .love-and-enjoy {
         display: flex;
         flex-direction: column;
@@ -633,7 +637,11 @@ header {
     .features-section {
         flex-direction: column;
     }
-
+    .features-images {
+        display: grid;
+        grid-template-columns: repeat(1, 500px);
+        gap: 10px;
+    }
     .love-and-enjoy {
         display: flex;
         flex-direction: column;
@@ -696,7 +704,11 @@ header {
     .features-section {
         flex-direction: column;
     }
-
+    .features-images {
+        display: grid;
+        grid-template-columns: repeat(1, 500px);
+        gap: 10px;
+    }
     .love-and-enjoy {
         display: flex;
         flex-direction: column;
@@ -794,7 +806,11 @@ header {
     .features-section {
         flex-direction: column;
     }
-
+    .features-images {
+        display: grid;
+        grid-template-columns: repeat(1, 500px);
+        gap: 10px;
+    }
     .our-sponsors .our-sponsors-images {
         display: flex;
         flex-direction: column;
@@ -815,7 +831,11 @@ header {
     .features-section {
         flex-direction: column;
     }
-
+    .features-images {
+        display: grid;
+        grid-template-columns: repeat(1, 500px);
+        gap: 10px;
+    }
     .love-and-enjoy {
         display: flex;
         flex-direction: column;
