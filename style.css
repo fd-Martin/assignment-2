@@ -7,11 +7,10 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-body {}
-
+/* header-start */
 header {
     padding: 50px;
-    background-color: #da9035;
+    background-color: #FF900E1A;
     max-width: 1440px;
     margin: auto;
 }
@@ -19,6 +18,23 @@ header {
 .nav {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+.nav .nav-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    text-align: center;
+    color: #131313;
+}
+
+.nav .nav-menu {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
 }
 
 .nav .nav-menu ul {
@@ -29,10 +45,17 @@ header {
 .nav .nav-menu li {
     list-style: none;
     padding: 10px 20px;
+    border-bottom: 1px solid transparent;
+    transition: .50s ease-in-out;
+}
+
+.nav .nav-menu li:hover {
+    border-bottom: 1px solid #424242;
 }
 
 .nav .nav-menu a {
     text-decoration: none;
+    color: #424242;
 }
 
 .header-content {
@@ -40,8 +63,53 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 40px;
+    padding: 70px 40px 20px 40px;
     text-align: center;
+}
+
+.header-content .header-title {
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #131313;
+    font-weight: bold;
+}
+
+.header-content .header-article {
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+    padding: 40px 0;
+}
+
+.header-content .header-button {
+    background: #FF900E;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: .50s ease-in-out;
+}
+
+.header-content .header-button:hover {
+    background: #ffffff;
+    color: #FF900E;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
 }
 
 .header-content>div {
@@ -49,11 +117,6 @@ header {
 }
 
 .header-image {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* height: 700px; */
-
     padding: 40px;
 }
 
@@ -63,30 +126,40 @@ header {
     border-radius: 20px;
 }
 
+/* header-end */
+/* -----------------------------feature-start----------------------------- */
 .features-section {
     display: flex;
     gap: 10px;
     align-items: center;
     justify-content: center;
-    padding: 15px;
+    padding: 50px 40px;
     max-width: 1440px;
     margin: auto;
 }
 
 .features-section>div {
     flex: 1;
-
 }
 
 .features-images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
+    gap: 10px;
+}
+
+.features-images img {
+    height: 100%;
+    width: 100%;
 }
 
 .features-section .features-content {
     color: #727272;
     font-style: normal;
+    padding: 40px;
+    text-align: left;
+    margin-left: 30px;
+
 }
 
 .features-section .features-content h2 {
@@ -125,57 +198,80 @@ header {
     line-height: 23px;
     text-align: center;
     color: #FFFFFF;
-    border: 0;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: .50s ease-in-out;
+}
+
+.features-section .features-content button:hover {
+    background-color: #ffffff;
+    color: #FF900E;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    border: 1px solid #FF900E;
     border-radius: 8px;
 }
 
-/* ========================================= */
+/* =================features-end======================== */
 
-/* ============================================ */
+
+/* ====================.love-and-enjoy-start======================== */
 .love-and-enjoy {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(auto, auto);
+    grid-gap: 20px;
     max-width: 1440px;
     margin: auto;
+    padding-top: 100px;
 }
 
-.love-and-enjoy .love-and-enjoy-content {
-    padding: 50px;
+.love-and-enjoy-content-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 20px;
 }
 
-.love-and-enjoy .love-and-enjoy-content>div {
-    flex: 1;
+.love-and-enjoy-content-2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
 }
 
-.love-and-enjoy .love-and-enjoy-content p {
+.love-and-enjoy-content-3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.love-and-enjoy p {
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-
-
     color: #727272;
+    padding: 20px 0;
 }
 
-.love-and-enjoy .love-and-enjoy-content .love-and-enjoy-content-top h2 {
+.love-and-enjoy .love-and-enjoy-content-1 h2 {
     border-left: 10px solid #FF900E;
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
     line-height: 53px;
     color: #131313;
+    padding-left: 25px;
 }
 
-.love-and-enjoy .love-and-enjoy-content .love-and-enjoy-sub-content {
-    background: #FFFFFF;
-    margin: 25px 0;
-    padding: 35px;
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
-    border-radius: 8px;
-}
-
-
-.love-and-enjoy .love-and-enjoy-content .love-and-enjoy-sub-content h4 {
+.love-and-enjoy .love-and-enjoy-content-2 .love-and-enjoy-sub-content h4 {
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 600;
@@ -184,16 +280,29 @@ header {
     color: #131313;
 }
 
-.love-and-enjoy .love-and-enjoy-image {}
+.love-and-enjoy .love-and-enjoy-content-2 .love-and-enjoy-sub-content {
+    background: #FFFFFF;
+    padding: 0 0 20px 35px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
 
+.love-and-enjoy .love-and-enjoy-content-3 {}
 
+.love-and-enjoy .love-and-enjoy-content-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+.love-and-enjoy .love-and-enjoy-content-3 .love-and-enjoy-image {
+    position: relative;
+}
 
-.love-and-enjoy .love-and-enjoy-image .experience {
-
+.love-and-enjoy .love-and-enjoy-content-3 .experience {
     background-color: blueviolet;
-
-    padding: 50px 30px;
+    position: absolute;
+    padding: 30px;
     font-style: normal;
     font-weight: 700;
     font-size: 65px;
@@ -201,20 +310,24 @@ header {
     text-align: center;
     color: #FFFFFF;
     border-radius: 8px;
+    bottom: -5%;
+    left: -10%;
 }
-.hide{
-    display: hide;;
-}
+
+/* ====================love-and-enjoy-end======================== */
+
+
+
+
 /* ==============================some-facts-start=================================== */
 .some-facts {
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: #FFFFFF;
-    padding: 50px 0;
+    padding: 100px 0;
     max-width: 1440px;
     margin: auto;
-    
 }
 
 .some-facts .some-facts-content {
@@ -222,7 +335,6 @@ header {
 }
 
 .some-facts .some-facts-content-title {
-
     font-size: 45px;
     font-weight: 700;
     line-height: 53px;
@@ -346,10 +458,59 @@ header {
     padding: 20px;
 }
 
-/* ------------------------------------------++++++++++++++++++++++++++++++ */
+/* =======================footer-end=================== */
+
+/* @media only screen and (max-width:576px) */
 @media only screen and (max-width:576px) {
-    .copywrite {
-        background-color: rgb(255, 247, 6);
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav .nav-menu {
+        padding-top: 50px;
+    }
+
+    .nav .nav-menu ul {
+        flex-direction: column;
+    }
+
+    .features-section {
+        flex-direction: column;
+    }
+
+    .love-and-enjoy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .love-and-enjoy .love-and-enjoy-content-3 .experience {
+        background-color: blueviolet;
+        position: absolute;
+        margin-bottom: 50px;
+        bottom: -10%;
+        left: 20%;
+    }
+
+    .love-and-enjoy .love-and-enjoy-content-1 h2 {
+        border-left: 0;
+        border-bottom: 10px solid #FF900E;
+        max-width: 425px;
+        margin: auto;
+        color: #131313;
+        padding-bottom: 25px;
+    }
+
+    .love-and-enjoy .love-and-enjoy-content-1 p,
+    .love-and-enjoy .love-and-enjoy-content-2 h4,
+    .love-and-enjoy .love-and-enjoy-content-2 p {
+        border-left: 0;
+        max-width: 425px;
+        margin: auto;
+        color: #131313;
+        padding-bottom: 25px;
     }
 
     .our-sponsors .our-sponsors-images {
@@ -358,6 +519,8 @@ header {
         justify-content: center;
     }
 
+
+
     .some-facts .some-facts-content {
         text-align: center;
     }
@@ -367,10 +530,53 @@ header {
     }
 }
 
+/* @media only screen and (min-width:577px) and (max-width:768px) */
 @media only screen and (min-width:577px) and (max-width:768px) {
-    .copywrite {
-        background-color: rgb(127, 17, 230);
+    .nav {
+        flex-direction: column;
+    }
 
+    .nav .nav-menu {
+        padding-top: 50px;
+    }
+
+    .features-section {
+        flex-direction: column;
+    }
+
+    .love-and-enjoy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .love-and-enjoy .love-and-enjoy-content-3 .experience {
+        background-color: blueviolet;
+        position: absolute;
+        margin-bottom: 50px;
+        bottom: -10%;
+        left: 20%;
+    }
+
+    .love-and-enjoy .love-and-enjoy-content-1 h2 {
+        border-left: 0;
+        border-bottom: 10px solid #FF900E;
+        max-width: 450px;
+        margin: auto;
+        color: #131313;
+        padding-bottom: 25px;
+    }
+
+    .love-and-enjoy .love-and-enjoy-content-1 p,
+    .love-and-enjoy .love-and-enjoy-content-2 h4,
+    .love-and-enjoy .love-and-enjoy-content-2 p {
+        border-left: 0;
+        max-width: 450px;
+        margin: auto;
+        color: #131313;
+        padding-bottom: 25px;
     }
 
     .our-sponsors .our-sponsors-images {
@@ -387,12 +593,55 @@ header {
     }
 }
 
+/* @media only screen and (min-width:769px) and (max-width:992px) */
 @media only screen and (min-width:769px) and (max-width:992px) {
-    .copywrite {
-        background-color: rgb(11, 199, 46);
-
-
+    .nav {
+        flex-direction: column;
     }
+
+    .nav .nav-menu {
+        padding-top: 50px;
+    }
+
+    .features-section {
+        flex-direction: column;
+    }
+
+    .love-and-enjoy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .love-and-enjoy .love-and-enjoy-content-3 .experience {
+        background-color: blueviolet;
+        position: absolute;
+        margin-bottom: 50px;
+        bottom: -10%;
+        left: 20%;
+    }
+
+    .love-and-enjoy .love-and-enjoy-content-1 h2 {
+        border-left: 0;
+        border-bottom: 10px solid #FF900E;
+        max-width: 480px;
+        margin: auto;
+        color: #131313;
+        padding-bottom: 25px;
+    }
+
+    .love-and-enjoy .love-and-enjoy-content-1 p,
+    .love-and-enjoy .love-and-enjoy-content-2 h4,
+    .love-and-enjoy .love-and-enjoy-content-2 p {
+        border-left: 0;
+        max-width: 480px;
+        margin: auto;
+        color: #131313;
+        padding-bottom: 25px;
+    }
+
 
     .our-sponsors .our-sponsors-images {
         flex-direction: column;
@@ -407,9 +656,53 @@ header {
     }
 }
 
+/* @media only screen and (min-width:993px) and (max-width:1200px) */
 @media only screen and (min-width:993px) and (max-width:1200px) {
-    .copywrite {
-        background-color: rgb(86, 255, 255);
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav .nav-menu {
+        padding-top: 50px;
+    }
+
+    .love-and-enjoy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .love-and-enjoy .love-and-enjoy-content-3 .experience {
+        background-color: blueviolet;
+        position: absolute;
+        margin-bottom: 50px;
+        bottom: -10%;
+        left: 20%;
+    }
+
+    .love-and-enjoy .love-and-enjoy-content-1 h2 {
+        border-left: 0;
+        border-bottom: 10px solid #FF900E;
+        max-width: 500px;
+        margin: auto;
+        color: #131313;
+        padding-bottom: 25px;
+    }
+
+    .love-and-enjoy .love-and-enjoy-content-1 p,
+    .love-and-enjoy .love-and-enjoy-content-2 h4,
+    .love-and-enjoy .love-and-enjoy-content-2 p {
+        border-left: 0;
+        max-width: 500px;
+        margin: auto;
+        color: #131313;
+        padding-bottom: 25px;
+    }
+
+    .features-section {
+        flex-direction: column;
     }
 
     .our-sponsors .our-sponsors-images {
@@ -426,10 +719,50 @@ header {
     }
 }
 
+/* @media only screen and (min-width:1201px) and (max-width:1440px) */
 @media only screen and (min-width:1201px) and (max-width:1440px) {
-    .copywrite {
-        background-color: rgb(61, 23, 139);
+
+    .features-section {
+        flex-direction: column;
+    }
+
+    .love-and-enjoy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .love-and-enjoy .love-and-enjoy-content-3 .experience {
+        background-color: blueviolet;
+        position: absolute;
+        margin-bottom: 50px;
+        bottom: -10%;
+        left: 20%;
+    }
+
+    .love-and-enjoy .love-and-enjoy-content-1 h2 {
+        border-left: 0;
+        border-bottom: 10px solid #FF900E;
+        max-width: 550px;
         margin: auto;
+        color: #131313;
+        padding-bottom: 25px;
+    }
+
+    .love-and-enjoy .love-and-enjoy-content-1 p,
+    .love-and-enjoy .love-and-enjoy-content-2 h4,
+    .love-and-enjoy .love-and-enjoy-content-2 p {
+        border-left: 0;
+        max-width: 550px;
+        margin: auto;
+        color: #131313;
+        padding-bottom: 25px;
+    }
+
+    .features-section {
+        flex-direction: column;
     }
 
     .some-facts .some-facts-content {
@@ -442,4 +775,4 @@ header {
 
 }
 
-/* =======================footer-end=================== */
+/* The End  */
