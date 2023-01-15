@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {}
+
+header {
+    padding: 50px;
+    background-color: #da9035;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav .nav-menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav .nav-menu li {
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.nav .nav-menu a {
+    text-decoration: none;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    text-align: center;
+}
+
+.header-content>div {
+    flex: 1;
+}
+
+.header-image {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* height: 700px; */
+
+    padding: 40px;
+}
+
+.header-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.features-section {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.features-section>div {
+    flex: 1;
+
+}
+
+.features-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.features-section .features-content {
+    color: #727272;
+    font-style: normal;
+}
+
+.features-section .features-content h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+    color: #727272;
+}
+
+.features-section .features-content .bold {
+    color: #131313;
+    font-weight: bold;
+}
+
+.features-section .features-content .orange {
+    color: #FF900E;
+    font-weight: bold;
+}
+
+.features-section .features-content p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin-bottom: 32px;
+}
+
+.features-section .features-content button {
+    background-color: #FF900E;
+    padding: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 8px;
+}
+
+/* ========================================= */
+
+/* ============================================ */
+.love-and-enjoy {
+    display: flex;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.love-and-enjoy .love-and-enjoy-content {
+    padding: 50px;
+}
+
+.love-and-enjoy .love-and-enjoy-content>div {
+    flex: 1;
+}
+
+.love-and-enjoy .love-and-enjoy-content p {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+
+    color: #727272;
+}
+
+.love-and-enjoy .love-and-enjoy-content .love-and-enjoy-content-top h2 {
+    border-left: 10px solid #FF900E;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+}
+
+.love-and-enjoy .love-and-enjoy-content .love-and-enjoy-sub-content {
+    background: #FFFFFF;
+    margin: 25px 0;
+    padding: 35px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+
+.love-and-enjoy .love-and-enjoy-content .love-and-enjoy-sub-content h4 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #131313;
+}
+
+.love-and-enjoy .love-and-enjoy-image {}
+
+
+
+
+.love-and-enjoy .love-and-enjoy-image .experience {
+
+    background-color: blueviolet;
+
+    padding: 50px 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 70px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+.hide{
+    display: hide;;
+}
+/* ==============================some-facts-start=================================== */
+.some-facts {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 50px 0;
+    max-width: 1440px;
+    margin: auto;
+    
+}
+
+.some-facts .some-facts-content {
+    text-align: left;
+}
+
+.some-facts .some-facts-content-title {
+
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0em;
+    color: #131313;
+}
+
+.some-facts .some-facts-content-sub-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    color: #727272;
+}
+
+.some-facts .some-facts-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.some-facts .some-facts-icon {
+    padding: 50px;
+    min-width: 242px;
+    min-height: 242px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    margin: 50px;
+    transition: .50s ease-in-out;
+}
+
+.some-facts .some-facts-icon:hover {
+    background-color: #ff8f0eb5;
+    color: #FFFFFF;
+    border: 1px solid transparent;
+    transform: rotate(-10deg);
+}
+
+.some-facts .some-facts-icon {
+    color: black;
+}
+
+.some-facts h3 {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 53px;
+    letter-spacing: 0em;
+    padding-bottom: 10px;
+}
+
+.some-facts h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0em;
+}
+
+
+/* ==============================some-facts-end=================================== */
+
+/* =======================our-sponsors-start================================================= */
+
+.our-sponsors {
+    text-align: center;
+    padding: 50px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.our-sponsors .our-sponsors-title {
+    padding: 25px 0;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+}
+
+.our-sponsors .our-sponsors-article {
+    padding: 25px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+.our-sponsors .our-sponsors-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.our-sponsors .our-sponsors-img img {
+    filter: grayscale(100%);
+    margin: 50px;
+    transition: .50s ease-in-out;
+}
+
+.our-sponsors .our-sponsors-img img:hover {
+    filter: grayscale(0%);
+}
+
+/* =======================our-sponsors-end================================================= */
+/* =======================footer-start=================== */
+.footer {
+    background-color: rgb(255, 255, 255);
+    max-width: 1440px;
+    margin: auto;
+}
+
+.copywrite {
+    background-color: #FFF4E7;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #424242;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ------------------------------------------++++++++++++++++++++++++++++++ */
+@media only screen and (max-width:576px) {
+    .copywrite {
+        background-color: rgb(255, 247, 6);
+    }
+
+    .our-sponsors .our-sponsors-images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .some-facts .some-facts-content {
+        text-align: center;
+    }
+
+    .some-facts .some-facts-icons {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:768px) {
+    .copywrite {
+        background-color: rgb(127, 17, 230);
+
+    }
+
+    .our-sponsors .our-sponsors-images {
+
+        flex-direction: column;
+    }
+
+    .some-facts .some-facts-content {
+        text-align: center;
+    }
+
+    .some-facts .some-facts-icons {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:992px) {
+    .copywrite {
+        background-color: rgb(11, 199, 46);
+
+
+    }
+
+    .our-sponsors .our-sponsors-images {
+        flex-direction: column;
+    }
+
+    .some-facts .some-facts-content {
+        text-align: center;
+    }
+
+    .some-facts .some-facts-icons {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width:993px) and (max-width:1200px) {
+    .copywrite {
+        background-color: rgb(86, 255, 255);
+    }
+
+    .our-sponsors .our-sponsors-images {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .some-facts .some-facts-content {
+        text-align: center;
+    }
+
+    .some-facts .some-facts-icons {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width:1201px) and (max-width:1440px) {
+    .copywrite {
+        background-color: rgb(61, 23, 139);
+        margin: auto;
+    }
+
+    .some-facts .some-facts-content {
+        text-align: center;
+    }
+
+    .some-facts .some-facts-icons {
+        flex-direction: column;
+    }
+
+}
+
+/* =======================footer-end=================== */
